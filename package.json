@@ -7,7 +7,11 @@
   "author": "Leonardo Anjos <leodrums11@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start:dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    "start:dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
+    "create:migrations": "typeorm migrations:create -n",
+    "start:migrations": "typeorm migration:run", // run all migrations
+    "rollback:migrations": "typeorm migration:revert" // undo last migration applied
   },
   "dependencies": {
     "express": "^4.17.1",
