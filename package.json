@@ -1,0 +1,19 @@
+{
+  "name": "poc-nps-chatbots",
+  "version": "1.0.0",
+  "description": "net promoter score from virtual assistants",
+  "main": "index.js",
+  "repository": "git@github.com:leonardo-anjos/poc-nps-chatbots.git",
+  "author": "Leonardo Anjos <leodrums11@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "typescript": "^4.2.2"
+  }
+}
